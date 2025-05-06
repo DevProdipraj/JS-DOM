@@ -1,0 +1,110 @@
+body{
+    background-color: #f5c48d;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+    width: 100%;
+}
+.container{
+    text-align: center;
+    
+}
+
+.container p{
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+#btn{
+    padding: 15px 35px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    transition: all 0.5s ease-in ;
+    box-shadow: 0px 2px 5px 5px rgba(145,145,145,0.77);
+    -webkit-box-shadow: 0px 2px 5px 5px rgba(145,145,145,0.77);
+    -moz-box-shadow: 0px 2px 5px 5px rgba(145,145,145,0.77);
+    
+}
+
+.container input:focus{
+    border: 2px solid white;    
+}
+
+#colorDisPlayBox {
+    padding: 4px 10px;
+    outline: none;
+    font-size: 18px;
+    width: 100px;
+}
+
+ .inputGroup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+ }
+
+ #copyBtn{
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    cursor: pointer;
+ }
+
+ #toastBox {
+    z-index: 999;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-color: green;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid white;
+    
+}
+
+.toastMessageSlideIn{
+    animation: toastAnimationIn 0.2s ease-in;
+}
+.toastMessageSlideOut{
+    animation: toastAnimationOut 0.2s ease-in;
+}
+
+
+@keyframes toastAnimationIn {
+    from{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes toastAnimationOut {
+    from {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+}
